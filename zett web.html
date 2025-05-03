@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil ZETT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #000000, #1a1a1a);
+            color: white;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px #1da1f2;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        .socials a {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1da1f2;
+            font-size: 1.2em;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .socials a:hover {
+            transform: scale(1.1);
+            color: #ffffff;
+        }
+        .socials a i {
+            margin-right: 8px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1a1a1a;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1da1f2;
+        }
+        .section {
+            padding-top: 80px;
+        }
+        .gallery {
+            margin-top: 40px;
+        }
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .auth-section {
+            margin-top: 40px;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .auth-section input {
+            margin: 10px 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .auth-section button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1da1f2;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .auth-section button:hover {
+            background-color: #0a8dd8;
+            transform: scale(1.05);
+        }
+        .welcome-message {
+            margin-top: 40px;
+            font-size: 1.2em;
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            background-color: #111;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("loader").style.display = "none";
+        });
+        function redirectToWhatsApp() {
+            alert("Pendaftaran berhasil! Kamu akan diarahkan ke WhatsApp untuk gabung ke Marga ZETT.");
+            window.location.href = 'https://wa.me/6282124608827?text=Halo%20saya%20ingin%20gabung%20Marga%20ZETT';
+        }
+    </script>
+</head>
+<body>
+    <div id="loader">
+        <img src="https://i.gifer.com/YCZH.gif" width="80" alt="Loading...">
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_62b86b6e9f.mp3?filename=lofi-study-112191.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#daftar">Gabung</a>
+    </nav>
+
+    <div class="container section" id="home">
+        <img src="img/ZETT GAMBAR.jpg" alt="Foto Profil">
+        <h1>SELAMAT DATANG DI MARGA ZETT</h1>
+        <p>Anggota Marga ZETT | Konten MLBB | Preset Sadis</p>
+        <div class="socials">
+            <a href="https://www.tiktok.com/@princeezett" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+            <a href="https://wa.me/6282124608827" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+        </div>
+
+        <div class="welcome-message">
+            <p>Selamat datang di Marga ZETT! Di sini bukan cuma komunitas, tapi keluarga pejuang kreatif MLBB. Siap kolaborasi, upgrade preset, dan jadi bagian dari nama besar ZETT? Ayo buktikan!</p>
+        </div>
+    </div>
+
+    <div class="container gallery section" id="galeri">
+        <h2>info ZETT</h2>
+        <img src="img/IYA.jpeg" alt="Galeri 1">
+        <img src="img/WhatsApp Image 2025-05-02 at 20.05.34.jpeg" alt="Galeri 2">
+        <img src="img/yes.jpeg" alt="Galeri 3">
+    </div>
+
+    <div class="container auth-section section" id="daftar">
+        <h2>Gabung Marga ZETT</h2>
+        <input type="text" placeholder="nama">
+        <input type="text" placeholder="belakangmu">
+        <br>
+        <button onclick="redirectToWhatsApp()">Register</button>
+    </div>
+
+    <footer>
+        <p>"Satu Tekad, Satu hati, Satu ZETT."<br>&copy; 2025 Marga ZETT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
